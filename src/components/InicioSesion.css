@@ -1,0 +1,101 @@
+/* Estilos para el contenedor principal y el cuerpo del documento */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Estilos para el contenedor de inicio de sesión */
+.inicio-sesion-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Estilos para el cuadro izquierdo del inicio de sesión */
+.left-box-inicio-sesion {
+  flex: 1;
+  position: relative;
+  height: 100%;
+  width: 60%;
+}
+/* Estilos para la imagen dentro del cuadro izquierdo */
+.left-box-inicio-sesion img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para el cuadro derecho del inicio de sesión */
+.right-box-inicio-sesion {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40%;
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para el título dentro del cuadro derecho */
+.right-box-inicio-sesion h1 {
+  font-size: 24px;
+  margin-top: 140px;
+}
+
+/* Estilos para el formulario dentro del cuadro derecho */
+.right-box-inicio-sesion form {
+  margin-bottom: 0px;
+}
+
+/* Estilos para las etiquetas dentro del cuadro derecho */
+.right-box-inicio-sesion label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada de email y contraseña */
+.right-box-inicio-sesion input[type="email"],
+.right-box-inicio-sesion input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.right-box-inicio-sesion button[type="submit"],
+.volver-btn,
+.acceso,
+.contraseña {
+  color: #ffffff;
+  background: #5ac4ff;
+  padding: 10px 10px; /* Ajusta el valor de padding para establecer el mismo ancho y alto */
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px; /* Ajusta el margen izquierdo */
+  margin-right: 10px; /* Ajusta el margen derecho */
+}
+
+/* Estilos para el logo dentro del cuadro derecho */
+.right-box-inicio-sesion .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* Ajusta el valor según tus necesidades */
+  height: 100px; /* Ajusta el valor según tus necesidades */
+  margin-top: auto; /* Añade esta propiedad para asegurarte de que el logo se muestre en el centro vertical */
+}
+
